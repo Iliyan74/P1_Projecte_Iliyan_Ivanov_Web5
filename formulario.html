@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="formulari1.css">
+        <title>Formulario</title>
+	</head>
+    
+    <body>
+        <div class="head">
+
+            <div class="logo">
+                <a href="index.html">Word$Festival</a>
+            </div>
+    
+            <nav class="navbar">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="entradas.html">Entradas</a>
+                <a href="formulario.html">Formulario</a>
+            </nav>
+    
+        </div>
+    
+      
+        <div class="div1"> 
+            
+            <div class="contenedor">
+
+                
+                <header> <br> <br> <br>
+                    <h1>¡GANA DOS ENTRADAS GRATIS!</h1>
+                    <h2 class="subtitulo">Para participar en este concurso debes rellanar el siguiente formulario</h2>
+                </header>
+              
+                <form method="post" action="form.php">
+                    <fieldset class="informacion_personal">
+                        <legend>Información personal</legend>
+                        
+                        <p>Ingrese su nombre y apellido</p>
+                        <input type="text" name="nombre" value="" placeholder="Nombre">
+                        <input type="text" name="apellido" value="" placeholder="Apellido"><br>
+
+                        
+                        <p>Ingrese un email y un número de teléfono</p>
+
+                        <input class="texto" type="email" id="email" required placeholder="Ingrese su email"><br>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+
+                        <P>Fecha de nacimiento</P>
+                        <input class="pass"type="date" name="date" value="" min="1900-01-01" max="2100-01-01" size="10" >
+                       
+                      
+
+                        
+                        <p>Ingresa tu sexo</p>
+                        <input type="radio" name="sexo" value="Hombre">Hombre<br>
+                        <input type="radio" name="sexo" value="Mujer">Mujer<br>
+                        <input type="radio" name="sexo" value="" checked>Prefiero no elegir<br>
+                        <p>Adjunte algún documento oficial para verificar su identidad</p>
+                        <input type="file" name="adjunto"><br>
+                       
+                    </fieldset>
+
+                    
+                    <fieldset class="programacion">
+                        <legend>Preferencias</legend>
+                        <p>Marque tu música favorita</p>
+                        <label for="House"><input type="checkbox" name="Música" value="House"
+                                id="House">House</label><br>
+                        <label for="EDM"><input type="checkbox" name="Música" value="EDM"
+                                id="EDM">EDM</label><br>
+                        <label for="Techno"><input type="checkbox" name="Música" value="Techno"
+                                id="Techno">Techno</label><br>
+                        <label for="Trance"><input type="checkbox" name="Música" value="Trance"
+                                id="Trance">Trance</label><br>
+                        <label for="Hardcore"><input type="checkbox" name="Música" value="Hardcore" id="Hardcore">Hardcore</label><br>
+                        <label for="otro"><input type="checkbox" name="Música" value="otro"
+                                id="otro">Otro/s</label>
+                        
+                  >
+                    </fieldset>
+
+                    
+                    <div class="formulario_envio">
+                        <input type="checkbox" name="infomracion" value="aceptar" required> Acepto los términos y condiciones<br>
+                        
+                        <input class="borrar" type="reset" name="restaurar" value="Borrar los datos del formulario">
+                        
+                        <div class="envio">
+
+                            <input class="enviar2" type="image" name="envio" src="Imagenes/BOTON-ENVIAR.png" width="500" height="40" alt="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
